@@ -1,5 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Poppins, Inter, Roboto, Work_Sans, Public_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
+export const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"], variable: "--font-poppins-sans" });
+export const inter = Inter({ subsets: ["latin"], variable: "--font-inter-sans" });
+export const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-roboto-sans" });
+export const workSans = Work_Sans({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-workSans-sans" });
+export const PublicSans = Public_Sans({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-publicSans-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,9 +29,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${roboto.variable} ${workSans.variable} ${PublicSans.variable} antialiased`}
       >
-        {children}
+        <div className="mx-auto bg-[#000000ed]">
+
+          
+
+          <div className="w-[1440px] bg-[#0000000d] mx-auto">
+            <Navbar />
+            {children}
+            
+          </div>
+
+          <Footer />
+
+        </div>
       </body>
     </html>
   );

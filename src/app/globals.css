@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -126,4 +129,9 @@
   html {
     @apply font-sans;
   }
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
 }
