@@ -53,7 +53,7 @@ const Secsection = () => {
 
                 <div className='mt-10 text-center flex justify-center'>
 
-                    <Button title='View Subscriptions' icon='/buttonicn.png' />
+                    <Button title='View Subscriptions' icon='/buttonicn.png' href="/subscription" />
 
                 </div>
 

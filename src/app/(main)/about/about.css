@@ -1,0 +1,10 @@
+.hero-sec h3::before {
+    content: "";
+    background: #D3B86A;
+    width: 13px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}

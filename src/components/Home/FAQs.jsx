@@ -98,7 +98,8 @@ export default function FaqSection() {
               <p className="text-white font-semibold text-[15px] mb-1">Still have questions?</p>
               <p className="text-[#888] text-[12px] mb-4">Can't find your question? Contact us directly!</p>
               {/* Dummy button matching site style */}
-              <Button title="Contact Us" icon="/Home/footer/footerbtn.png" />   
+              <Button title="Contact Us" icon="/Home/footer/footerbtn.png" href="/contact" 
+/>   
             </div>
           </div>
 

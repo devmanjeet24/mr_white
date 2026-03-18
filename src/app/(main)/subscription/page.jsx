@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import Image from 'next/image'
 import React from 'react'
-import { PublicSans, workSans } from '../layout'
+import { PublicSans, workSans } from '@/lib/fonts';
 import "@/components/Home/home.css"
 
 const Sunscription = () => {
@@ -40,11 +40,11 @@ const Sunscription = () => {
       {/* CONTENT */}
       <div className="px-[48px] py-[96px]">
 
-        <h3 className={`text-white font-semibold text-[32px] ${workSans.className}`}>
+        <h3 className={`text-white font-semibold text-[32px] ${workSans.className} text-center`}>
           Get Started with Mr. White in 3 Easy Steps
         </h3>
 
-        <p className={`text-white font-medium text-[20px] mb-10 ${workSans.className}`}>
+        <p className={`text-white font-medium text-[20px] mb-10 ${workSans.className} text-center`}>
           A short guide on how to get started with Mr White.
         </p>
 
@@ -78,6 +78,10 @@ const Sunscription = () => {
 
         </div>
 
+        <div className='flex justify-center items-center mt-[40px]'>
+            <Button title="Sign up & Login" icon="/blacklogin.png" href="/login" />
+          </div>
+
       </div>
 
 
@@ -87,7 +91,7 @@ const Sunscription = () => {
 
       {/* page sec  */}
 
-      <div className='flex justify-start gap-10 mt-10'>
+      <div className='flex justify-start gap-10 py-[96px]'>
                           <div className='w-[50%]'>
                               <div>
                                   <h3 className={`${workSans.className} bold text-[28px] text-[#fff]`}>Mr. White's Companion Crew - FREE Plan</h3>

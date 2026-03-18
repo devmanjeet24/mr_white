@@ -3,8 +3,7 @@ import React from 'react'
 import Button from '../Button'
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
-import { workSans } from '@/app/layout'
-import {PublicSans} from '@/app/layout'
+import { PublicSans, workSans } from '@/lib/fonts';
 
 const Banner = () => {
     return (
@@ -70,7 +69,7 @@ const Banner = () => {
 
                         {/* CTA BUTTON */}
                         <div className='pt-2'>
-                            <Button title='View Subscriptions' icon='/buttonicn.png' />
+                            <Button title='View Subscriptions' icon='/buttonicn.png' href="/subscription" />
                         </div>
 
 

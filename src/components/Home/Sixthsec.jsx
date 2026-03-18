@@ -1,4 +1,4 @@
-import { PublicSans, workSans } from '@/app/layout';
+import { PublicSans, workSans } from '@/lib/fonts';
 import Image from 'next/image';
 import React from 'react'
 import Button from '../Button';

@@ -230,7 +230,8 @@ const Forthsec = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-10'>
-                        <Button title="View Subscriptions" icon="/buttonicn.png" />
+                        <Button title="View Subscriptions" icon="/buttonicn.png" href="/subscription" 
+/>
                     </div>
 
                 </div>

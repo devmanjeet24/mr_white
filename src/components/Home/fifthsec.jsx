@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import Button from '../Button';
-import { PublicSans, workSans } from '@/app/layout';
+import { PublicSans, workSans } from '@/lib/fonts';
 import { Fifthsec as fifthData } from '@/Data/Fifthsec';
 
 const Fifthsec = () => {
@@ -46,7 +46,8 @@ const Fifthsec = () => {
 
 
                         <div className='flex justify-start items-center mt-10'>
-                            <Button title="Sign Up" icon="/Login.png" className="fifsecbtn" />
+                            <Button title="Sign Up" icon="/Login.png" className="fifsecbtn" href="/register" 
+/>
                         </div>
 
                     </div>

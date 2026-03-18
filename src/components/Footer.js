@@ -204,7 +204,8 @@ export default function Footer() {
 
           {/* Contact Button */}
           <div className="self-start mt-1">
-            <Button title="Contact Us" icon="/Home/footer/footerbtn.png" />
+            <Button title="Contact Us" icon="/Home/footer/footerbtn.png" href="/contact" 
+/>
           </div>
 
         </div>
