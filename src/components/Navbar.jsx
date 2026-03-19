@@ -195,7 +195,7 @@ const Navbar = () => {
             href="/contact"
             className="bg-[#D3B86A] text-black px-5 py-2 rounded-lg flex items-center gap-2"
           >
-            <Image src="/contact.png" width={16} height={16} alt="contact" />
+            <Image src="/Home/footer/footerbtn.png" width={16} height={16} alt="contact" />
             Contact
           </Link>
         </div>
