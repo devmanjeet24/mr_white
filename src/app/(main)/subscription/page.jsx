@@ -57,12 +57,12 @@ const Sunscription = () => {
               className="bg-[#FFFFFF1A] rounded-lg p-8 flex items-start gap-4"
             >
 
-              {/* NUMBER */}
+  
               <div className="w-[40px] h-[40px] flex-shrink-0 flex items-center justify-center rounded-full bg-[#D3B86A] text-black font-semibold">
                 {step.id}
               </div>
 
-              {/* TEXT */}
+      
               <div>
                 <h3 className={`text-white text-[20px] font-semibold mb-2 ${workSans.className}`}>
                   {step.title}
@@ -89,7 +89,7 @@ const Sunscription = () => {
 
 
 
-      {/* page sec  */}
+   
 
       <div className='flex justify-start gap-10 py-[96px]'>
                           <div className='w-[50%]'>

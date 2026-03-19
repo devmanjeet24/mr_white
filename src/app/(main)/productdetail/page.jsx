@@ -61,10 +61,9 @@ export default function ProductPage() {
                         </div>
                     </div>
 
-                    {/* RIGHT */}
                     <div className="flex-1">
 
-                        {/* RATING */}
+               
                         <div className="flex items-center gap-[6px] text-[14px]">
                             <span className="text-[#D3B86A] tracking-[2px]">★★★★★</span>
                             <span className="text-[#aaa]">4.9</span>
@@ -165,19 +164,19 @@ export default function ProductPage() {
                 {/* REVIEWS */}
                 <div className="mt-[100px]">
 
-                    {/* TITLE */}
+             
                     <h3 className={`text-center text-[36px] font-semibold mb-[50px] ${workSans.className}`}>
                         Word on the Streets
                     </h3>
 
-                    {/* FORM */}
+      
                     <div className="bg-gradient-to-b from-[#1a1a1a] to-[#0d0d0d] rounded-[12px] px-[50px] py-[40px] w-full">
 
                         <p className={`text-center text-[20px] mb-[25px] ${PublicSans.className}`}>
                             Leave a review
                         </p>
 
-                        {/* STARS (PURE BLACK) */}
+                   
                         <div className="flex justify-center gap-[10px] mb-[30px]">
                             {[1, 2, 3, 4, 5].map((i) => (
                                 <button
@@ -211,7 +210,7 @@ export default function ProductPage() {
 
                         </div>
 
-                        {/* BUTTON (MATCH ADD TO CART STYLE) */}
+                
                         <button className={`w-full bg-[#D3B86A] text-black py-[16px] mt-[30px] text-[18px] font-bold rounded-[8px] flex items-center justify-center gap-2 ${workSans.className}`}>
                             ★ Leave Review
                         </button>
@@ -230,7 +229,7 @@ export default function ProductPage() {
 
                                 <div className="flex items-start gap-[16px]">
 
-                                    {/* AVATAR IMAGE */}
+             
                                     <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
                                         <Image
                                             src="/product/reviewman.png"
@@ -243,14 +242,13 @@ export default function ProductPage() {
 
                                     <div className="flex-1">
 
-                                        {/* NAME + STARS */}
                                         <div className="flex items-center gap-[12px] flex-wrap">
 
                                             <p className={`text-[18px] font-semibold ${workSans.className}`}>
                                                 John Doe
                                             </p>
 
-                                            {/* STARS (YELLOW + HALF STYLE FEEL) */}
+                                      
                                             <div className="flex items-center gap-[4px] text-[18px] text-[#D3B86A]">
                                                 ★★★★☆
                                             </div>
@@ -259,15 +257,15 @@ export default function ProductPage() {
 
                                         </div>
 
-                                        {/* LOCATION */}
+                           
                                         <p className={`text-[14px] text-[#777] mt-[4px] ${PublicSans.className}`}>
                                             Seattle, Washington
                                         </p>
 
-                                        {/* DIVIDER */}
+                                  
                                         <div className="w-full h-[1px] bg-[#969696] my-[14px]" />
 
-                                        {/* TEXT */}
+                               
                                         <p className={`text-[16px] text-[#B5B5B5] leading-[1.8] ${PublicSans.className}`}>
                                             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
                                         </p>

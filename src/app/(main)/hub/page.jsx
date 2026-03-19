@@ -18,9 +18,9 @@ export default function LegacyPage() {
                 />
             </div>
 
-            {/* WRAPPER */}
+    
             <div className="max-w-[1100px] mx-auto px-6 py-[80px] space-y-[60px]">
-                {/* SECTION 1 */}
+        
                 <div className="flex gap-10 items-start">
                     <div className="w-1/2 flex flex-col gap-5">
                         <h3 className={`hero-title ${workSans.className}`}>
@@ -53,7 +53,7 @@ export default function LegacyPage() {
                     </div>
                 </div>
 
-                {/* SECTION 2 */}
+  
                 <div>
                     <h3 className={`hero-title ${workSans.className}`}>
                         What is the Legacy of Long Dog Hub?
