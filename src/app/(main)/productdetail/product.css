@@ -1,0 +1,85 @@
+.producticon-btn {
+    background: #FFFFFF1F;
+    width: 46%;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: start;
+        border-radius: 8px;
+}
+
+.producticon-btn p {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.producticon-btn p span{
+    color: #D3B86A;
+
+}
+
+.producticon-btn p span svg {
+    color: #d3b86a;
+    width: 34px;
+    height: 34px;
+}
+
+.producticon-btn p{
+    font-family: var(--font-workSans-sans);
+        font-size: 20px;
+}
+
+.shipped {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: #FFFFFF1F;
+    border-radius: 8px 8px 0px 0px;
+    font-family: var(--font-workSans-sans);
+}
+
+.shipped div {
+    width: 8px;
+    height: 8px;
+    background: #03d85f;
+    border-radius: 34px;
+    margin-right: 10px;
+}
+
+.developed {
+    margin-top: 45px;
+    background: #FFFFFF1A;
+    padding: 22px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.developed span:before {
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index
+: -1;
+}
+
+.developed span {
+    position: relative;
+    z-index: 99;
+}
+
+.developed span svg{
+    color: #fff;
+}

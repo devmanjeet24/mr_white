@@ -74,7 +74,7 @@ const Page = () => {
 
                     <div className='flex justify-center items-center gap-[45px] flex-col w-full mt-[50px]'>
 
-                        {/* 🔥 LOGIN BUTTON */}
+                      
                         <div
                             onClick={handleLogin}
                             className='bg-[#323232] cursor-pointer flex justify-center items-center h-[100px] rounded-[22px] gap-[30px] w-full'
