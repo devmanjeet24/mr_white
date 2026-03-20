@@ -30,14 +30,14 @@ const faqs = [
   { question: "How do I join Mr. White's Elite pack?", answer: "Visit our membership page and select the Elite Pack plan. You'll get instant access to all premium features upon sign-up." },
 ];
 
-function AccordionItem({ question, answer }) {
-  const [open, setOpen] = useState(false);
+function AccordionItem({ question, answer, defaultOpen }) {
+  const [open, setOpen] = useState(defaultOpen || false);
 
   return (
-    <div className="border-b border-[#2a2a2a]">
+    <div className="border-b border-[#111111]">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center py-4 text-left"
+        className="w-full flex justify-between items-center py-6 text-left"
       >
         <span
           className="text-white text-[20px] font-medium pr-4"
@@ -70,80 +70,85 @@ export default function FaqSection() {
   return (
 
     <>
-    <section className="w-full bg-[#0d0d0d] min-h-screen flex flex-col py-[96px]">
-      <div className="flex flex-col lg:flex-row w-full flex-1">
-        {/* LEFT PANEL */}
-        <div className="relative lg:w-[38%] bg-[#0d0d0d] flex flex-col overflow-hidden min-h-[500px] lg:min-h-screen">
-          {/* Background glow / galaxy effect */}
-          <div
+      <section className="w-full bg-[#0d0d0d] min-h-screen flex flex-col py-[96px]">
+        <div className="flex flex-col lg:flex-row w-full flex-1">
+          {/* LEFT PANEL */}
+          <div className="relative lg:w-[38%] bg-[#0d0d0d] flex flex-col overflow-hidden lg:min-h-screen">
+
+            {/* <div
             className="absolute inset-0 z-0"
             
-          />
+          /> */}
 
-          {/* Content above image */}
-          <div className="relative z-10 px-8 pt-10">
-            <h2
-              className={`${workSans.className} bold text-[32px] text-[#fff] leading-[1.15]`}
-            >
-              Discover Mr. White: Your Questions Answered
-            </h2>
-            <p
-              className={`${PublicSans.className} font-medium text-[28px] leading-[100%] tracking-[-0.05em] text-[#D3B86A] mt-6`}
-            >
-              Frequently Asked Questions
-            </p>
+            {/* Content above image */}
+            <div className="relative z-10 px-8 pt-10">
+              <h2
+                className={`${workSans.className} bold text-[32px] text-[#fff] leading-[1.15]`}
+              >
+                Discover Mr. White: Your Questions Answered
+              </h2>
+              <p
+                className={`${PublicSans.className} font-medium text-[28px] leading-[100%] tracking-[-0.05em] text-[#D3B86A] mt-6`}
+              >
+                Frequently Asked Questions
+              </p>
 
-            {/* Still have questions card */}
-            <div className="mt-8 bg-[#FFFFFF1A] p-5 max-w-[320px] z-50">
-              <p className="text-white font-semibold text-[15px] mb-1">Still have questions?</p>
-              <p className="text-[#888] text-[12px] mb-4">Can't find your question? Contact us directly!</p>
-              {/* Dummy button matching site style */}
-              <Button title="Contact Us" icon="/Home/footer/footerbtn.png" href="/contact" 
-/>   
+              {/* Still have questions card */}
+              <div className="mt-8 bg-[#FFFFFF1A] p-5 max-w-[320px] z-50 mb-2.5 z-50">
+                <p className="text-white font-semibold text-[15px] mb-1">Still have questions?</p>
+                <p className="text-[#888] text-[12px] mb-4">Can't find your question? Contact us directly!</p>
+                {/* Dummy button matching site style */}
+                <Button title="Contact Us" icon="/Home/footer/footerbtn.png" href="/contact"
+                />
+              </div>
+            </div>
+
+            {/* Dog image at bottom */}
+            <div className="relative z-10 flex-1 flex items-end justify-center">
+              <div className="relative w-full flex justify-center">
+                <Image
+                  src="/bgFAQS.png"
+                  width={650}
+                  height={500}
+                  alt="dog"
+                  className="absolute -bottom-25 z-0"
+                />
+
+
+              </div>
             </div>
           </div>
 
-          {/* Dog image at bottom */}
-          <div className="relative z-10 flex-1 flex items-end justify-center">
-            <div className="relative w-full flex justify-center">
-              <Image
-                src="/bgFAQS.png"
-                width={500}
-                height={500}
-                alt="dog"
-                className="absolute -bottom-25 z-0"
-              />
-              
-              
+          {/* RIGHT PANEL — FAQ Accordion */}
+          <div className="lg:w-[62%] bg-[#272626] px-8 py-10 overflow-y-auto">
+            <div className="max-w-full">
+              {faqs.map((faq, i) => (
+                <AccordionItem
+                  key={i}
+                  question={faq.question}
+                  answer={faq.answer}
+                  defaultOpen={i === 0}
+                />
+              ))}
             </div>
           </div>
         </div>
-
-        {/* RIGHT PANEL — FAQ Accordion */}
-        <div className="lg:w-[62%] bg-[#272626] px-8 py-10 overflow-y-auto">
-          <div className="max-w-full">
-            {faqs.map((faq, i) => (
-              <AccordionItem key={i} question={faq.question} answer={faq.answer} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
 
-     <section className="pb-[96px]">
+      <section className="mb-[96px] py-3.5">
 
         <div className="flex justify-between items-center">
 
-            <Image src="/Home/Scroll/Scroll1.png" width={320} height={120} alt="dog"  />
-            <Image src="/Home/Scroll/Scroll2.png" width={320} height={120} alt="dog"  />
-            <Image src="/Home/Scroll/Scroll3.png" width={320} height={120} alt="dog"  />
-            <Image src="/Home/Scroll/Scroll4.png" width={320} height={120} alt="dog"  />
-                       
+          <Image src="/Home/Scroll/Scroll1.png" width={320} height={120} alt="dog" />
+          <Image src="/Home/Scroll/Scroll2.png" width={320} height={120} alt="dog" />
+          <Image src="/Home/Scroll/Scroll3.png" width={320} height={120} alt="dog" />
+          <Image src="/Home/Scroll/Scroll4.png" width={320} height={120} alt="dog" />
+
         </div>
 
-     </section>
+      </section>
 
-     </>
+    </>
   );
 }

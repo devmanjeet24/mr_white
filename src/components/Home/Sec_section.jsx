@@ -51,9 +51,9 @@ const Secsection = () => {
 
                 </div>
 
-                <div className='mt-10 text-center flex justify-center'>
+                <div className='mt-12 text-center flex justify-center'>
 
-                    <Button title='View Subscriptions' icon='/buttonicn.png' href="/subscription" />
+                    <Button title='Read More' icon='/buttonicn.png' href="/subscription" />
 
                 </div>
 

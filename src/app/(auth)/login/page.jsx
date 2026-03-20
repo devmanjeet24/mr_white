@@ -14,7 +14,7 @@ const Page = () => {
     const handleLogin = () => {
         if (username === "Manjeet Singh" && password === "manjeet@123") {
 
-         
+
             localStorage.setItem("user", JSON.stringify({
                 name: "Manjeet Singh",
                 isLoggedIn: true
@@ -62,17 +62,17 @@ const Page = () => {
                         />
                     </div>
 
-                    <div className='mt-[50px] flex justify-between items-center'>
-                        <p className={`text-white font-semibold text-[24px] border-b-[3px] border-white ${PublicSans.className}`}>
+                    <div className='mt-[60px] flex justify-between items-center'>
+                        <p className={`text-white font-medium text-[32px] border-b-[3px] border-white ${PublicSans.className}`}>
                             <a href="/register">Sign-up</a>
                         </p>
 
-                        <p className={`text-white font-semibold text-[24px] border-b-[3px] border-white ${PublicSans.className}`}>
+                        <p className={`text-white font-medium text-[32px] border-b-[3px] border-white ${PublicSans.className}`}>
                             <a href="#">Lost your password?</a>
                         </p>
                     </div>
 
-                    <div className='flex justify-center items-center gap-[45px] flex-col w-full mt-[50px]'>
+                    {/* <div className='flex justify-center items-center gap-[45px] flex-col w-full mt-[50px]'>
 
                       
                         <div
@@ -87,7 +87,27 @@ const Page = () => {
                             </p>
                         </div>
 
+                    </div> */}
+
+
+                    <div className='flex justify-center items-center gap-[45px] flex-col w-full mt-[60px]'>
+
+                        <div onClick={handleLogin} className='bg-[#323232] flex justify-center items-center h-[100px] rounded-[22px] gap-[30px] w-full' >
+                            <span>
+                                <Image src="/auth/Lightning.png" width={60} height={60} alt='icon' />
+                            </span>
+                            <p className={`${PublicSans.className} font-medium text-[60px] leading-[100%] tracking-[-0.05em] text-center text-[#fff]`}>Login</p>
+                        </div>
+
+                        <div className='bg-[#323232] flex justify-center items-center h-[100px] rounded-[22px] gap-[30px] w-full'>
+                            <span>
+                                <Image src="/auth/Cardholder.png" width={60} height={60} alt='icon' />
+                            </span>
+                            <p className={`${PublicSans.className} font-medium text-[60px] leading-[100%] tracking-[-0.05em] text-center text-[#fff]`}>Connect</p>
+                        </div>
+
                     </div>
+
 
                 </div>
 

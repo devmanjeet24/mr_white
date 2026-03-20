@@ -14,12 +14,12 @@ const Banner = () => {
 
                     <div className='flex flex-col gap-y-10'>
 
-                        <h1 className={`text-white ${workSans.className} font-bold text-[44px] leading-[1.2]`}>
+                        <h1 className={`text-white ${workSans.className} font-bold text-[46px] leading-[1.2]`}>
                             Secrets of Paws and Humans,
                             revealed they are.
                         </h1>
 
-                        <p className={`text-white/80 ${workSans.className} font-medium text-[24px]`}>
+                        <p className={`text-white/90 ${workSans.className} font-medium text-[26px]`}>
                             All the information for dogs and humans,
                             packed into one hub.
                         </p>
@@ -74,7 +74,7 @@ const Banner = () => {
 
 
                         {/* REVIEW CARD */}
-                        <div className='bg-[#111111] rounded-xl p-5 flex flex-col gap-4 w-full'>
+                        <div className='bg-[#111111] rounded-xl p-6 flex flex-col gap-4 w-full'>
 
                             <div className='flex items-center gap-4'>
 
@@ -94,12 +94,23 @@ const Banner = () => {
                                             Nancy S
                                         </p>
 
-                                        <div className='flex gap-1'>
-                                            {/* <Image src="/star.png" width={14} height={7} alt='star' />
-                                            <Image src="/star.png" width={14} height={14} alt='star' />
-                                            <Image src="/star.png" width={14} height={14} alt='star' />
-                                            <Image src="/star.png" width={14} height={14} alt='star' />
-                                            <Image src="/star-half.png" width={14} height={14} alt='star' /> */}
+                                        {/* <div className='flex gap-1'>
+                                            
+                                            <span><FaStar className='text-[#D3B86A]' /></span>
+                                            <span><FaStar className='text-[#D3B86A]' /></span>
+                                            <span><FaStar className='text-[#D3B86A]' /></span>
+                                            <span><FaStar className='text-[#D3B86A]' /></span>
+                                            <span><FaStarHalfAlt className='text-[#D3B86A]' /></span>
+
+                                        </div> */}
+
+                                    </div>
+
+                                    <div className=' flex justify-start items-center gap-2'>
+                                       <p className={`${PublicSans.className} text-gray-400 text-[13px]`}> Auburn, WA </p> 
+                                       <span>|</span> 
+                                       <div className='flex gap-1'>
+                                            
                                             <span><FaStar className='text-[#D3B86A]' /></span>
                                             <span><FaStar className='text-[#D3B86A]' /></span>
                                             <span><FaStar className='text-[#D3B86A]' /></span>
@@ -107,19 +118,14 @@ const Banner = () => {
                                             <span><FaStarHalfAlt className='text-[#D3B86A]' /></span>
 
                                         </div>
-
                                     </div>
-
-                                    <p className='text-gray-400 text-[13px]'>
-                                        Auburn, WA
-                                    </p>
 
                                 </div>
 
                             </div>
 
 
-                            <p className={`${PublicSans.className} text-gray-300 text-[14px] leading-relaxed`}>
+                            <p className={`${PublicSans.className} text-gray-300 text-[16px] leading-relaxed`}>
                                 Meeting Anahata Graceland and Arturo was a great experience: full of loving,
                                 expert advice and attention to our needs.
                             </p>
