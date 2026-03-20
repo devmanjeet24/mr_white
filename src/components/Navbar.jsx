@@ -75,58 +75,58 @@ const Navbar = () => {
 
 
             {user && (
-  <DropdownMenu modal={false}>
-    
-    {/* TRIGGER */}
-    <DropdownMenuTrigger asChild>
-      <p className="cursor-pointer text-white hover:text-[#D3B86A] transition duration-200 text-[15px]">
-        Pages
-      </p>
-    </DropdownMenuTrigger>
+              <DropdownMenu modal={false}>
 
-    {/* CONTENT */}
-    <DropdownMenuContent
-      align="end"
-      className="w-[180px] bg-[#0f0f0f] border border-[#2A2A2A] rounded-lg p-[6px] shadow-xl"
-    >
+                {/* TRIGGER */}
+                <DropdownMenuTrigger asChild>
+                  <p className="cursor-pointer text-white hover:text-[#D3B86A] transition duration-200 text-[15px]">
+                    Pages
+                  </p>
+                </DropdownMenuTrigger>
 
-      {/* ITEM */}
-      <DropdownMenuItem asChild>
-        <Link
-          href="/chat"
-          className="dropdown-item"
-        >
-          Chat
-        </Link>
-      </DropdownMenuItem>
+                {/* CONTENT */}
+                <DropdownMenuContent
+                  align="end"
+                  className="w-[180px] bg-[#0f0f0f] border border-[#2A2A2A] rounded-lg p-[6px] shadow-xl"
+                >
 
-      <DropdownMenuItem asChild>
-        <Link href="/collection" className="dropdown-item">
-          Collection
-        </Link>
-      </DropdownMenuItem>
+                  {/* ITEM */}
+                  <DropdownMenuItem asChild>
+                    <Link
+                      href="/chat"
+                      className="dropdown-item"
+                    >
+                      Chat
+                    </Link>
+                  </DropdownMenuItem>
 
-      <DropdownMenuItem asChild>
-        <Link href="/hub" className="dropdown-item">
-          Hub
-        </Link>
-      </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/collection" className="dropdown-item">
+                      Collection
+                    </Link>
+                  </DropdownMenuItem>
 
-      <DropdownMenuItem asChild>
-        <Link href="/productdetail" className="dropdown-item">
-          Product
-        </Link>
-      </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/hub" className="dropdown-item">
+                      Hub
+                    </Link>
+                  </DropdownMenuItem>
 
-    </DropdownMenuContent>
-  </DropdownMenu>
-)}
+                  <DropdownMenuItem asChild>
+                    <Link href="/productdetail" className="dropdown-item">
+                      Product
+                    </Link>
+                  </DropdownMenuItem>
+
+                </DropdownMenuContent>
+              </DropdownMenu>
+            )}
 
 
 
             {/* shadcnui dropdown menu ends  */}
 
-     
+
             {/* {user && (
               <div className="relative">
                 <p
