@@ -91,7 +91,15 @@ const Sunscription = () => {
 
    
 
-      <div className='flex justify-start gap-10 py-[96px]'>
+      <div className='py-[96px]'>
+
+<div className='flex flex-col gap-[20px] mb-[50px]'>
+    <h3 className={`font-medium text-white leading-[100%] tracking-[-0.05em] text-[30px] text-center ${PublicSans.className}`}>Subscriptions, Mr. White has?</h3>
+    <p className={`font-medium text-white leading-[100%] tracking-[-0.05em] text-[20px] text-center ${PublicSans.className}`}>Mr. White’s available subscriptions</p>
+</div>
+
+<div className='flex justify-start gap-10 '>
+
                           <div className='w-[50%]'>
                               <div>
                                   <h3 className={`${workSans.className} bold text-[28px] text-[#fff]`}>Mr. White's Companion Crew - FREE Plan</h3>
@@ -199,7 +207,7 @@ const Sunscription = () => {
                                   
                                   <h3 className={`${workSans.className} bold text-[28px] text-[#fff]`}>Mr. White's Elite Pack </h3>
                                   <p className={`${workSans.className} normal text-[20px] text-[#fff] italic`}>(Your Dog’s Name) Legacy of Love Living Hub</p>
-                                  <div className='mt-[12px] bg-[#D3B86A] p-2 rounded-lg'>
+                                  <div className={`mt-[12px] bg-[#D3B86A] p-2 rounded-lg ${PublicSans.className}`}>
                                       <p>Everything in the FREE Account Plus this Invaluable Service </p>
                                   </div>
       
@@ -301,6 +309,7 @@ const Sunscription = () => {
       
                               </div>
       
+                          </div>
                           </div>
                       </div>
     </>

@@ -211,7 +211,7 @@ font-family: var(--font-workSans-sans);
 .forthright img{
     width:100%;
     height:auto;
-    margin-bottom:24px;
+    /* margin-bottom:24px; */
     border-radius:6px;
 }
 
@@ -337,5 +337,7 @@ h4.icon-head {
     justify-content: center;
     align-items: center;
     border-radius: 23px;
+    font-family: var(--font-publicSans-sans);
+    font-weight: 600;
 }
 

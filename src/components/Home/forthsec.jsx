@@ -52,15 +52,6 @@ const Forthsec = () => {
 
                                 <hr className='HR' />
 
-                                <div className='forthitem'>
-                                    <h4 className='icon-head'><span><Image src="/Home/icon/cross.png" width={19} height={19} alt="icon" /></span>Daily Wisdom and Guidance</h4>
-                                    <p>
-                                        Access free, expert advice from Mr. White — tips on training,
-                                        health, play, and bonding that help enrich your relationship
-                                        with your dog every day.
-                                    </p>
-                                </div>
-
                             </div>
 
 
@@ -75,7 +66,32 @@ const Forthsec = () => {
                                     alt="dog"
                                 />
 
-                                <div className='forthitem rightitem'>
+                               
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                        <div className='last-fourhead forthhead-box px-8'>
+
+                           
+
+                            <div className='forthbottom last-fourhead'>
+
+                                <div className='forthitem'>
+                                    <h4 className='icon-head'><span><Image src="/Home/icon/cross.png" width={19} height={19} alt="icon" /></span>Daily Wisdom and Guidance</h4>
+                                    <p>
+                                         Access free, expert advice from Mr. White — tips on training,
+                                        health, play, and bonding that help enrich your relationship
+                                        with your dog every day.
+                                    </p>
+                                </div>
+
+                                <div className='forthitem'>
                                     <h4 className='icon-head'><span><Image src="/Home/icon/pipe.png" width={19} height={19} alt="icon" /></span>Trusted Product Recommendations</h4>
                                     <p>
                                         Benefit from vetted product suggestions, focusing on quality
@@ -84,8 +100,6 @@ const Forthsec = () => {
                                 </div>
 
                             </div>
-
-
 
                         </div>
 
