@@ -10,6 +10,7 @@ import { GraduationCap } from 'lucide-react';
 import { Droplet } from 'lucide-react';
 import { Vault } from 'lucide-react';
 import { RectangleCircle } from 'lucide-react';
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import './product.css'
 
 export default function ProductPage() {
@@ -36,7 +37,7 @@ export default function ProductPage() {
                 />
             </div>
 
-            <div className=" mx-auto px-6 py-[60px]">
+            <div className=" mx-auto px-6 pt-[60px] pb-[30px] mb-[96px]">
 
                 {/* TOP */}
                 <div className="flex gap-[50px] mb-[60px]">
@@ -63,7 +64,7 @@ export default function ProductPage() {
 
                     <div className="flex-1">
 
-               
+
                         <div className="flex items-center gap-[6px] text-[14px]">
                             <span className="text-[#D3B86A] tracking-[2px]">★★★★★</span>
                             <span className="text-[#aaa]">4.9</span>
@@ -164,27 +165,27 @@ export default function ProductPage() {
                 {/* REVIEWS */}
                 <div className="mt-[100px]">
 
-             
+
                     <h3 className={`text-center text-[36px] font-semibold mb-[50px] ${workSans.className}`}>
                         Word on the Streets
                     </h3>
 
-      
+
                     <div className="bg-gradient-to-b from-[#1a1a1a] to-[#0d0d0d] rounded-[12px] px-[50px] py-[40px] w-full">
 
                         <p className={`text-center text-[20px] mb-[25px] ${PublicSans.className}`}>
                             Leave a review
                         </p>
 
-                   
+
                         <div className="flex justify-center gap-[10px] mb-[30px]">
                             {[1, 2, 3, 4, 5].map((i) => (
                                 <button
                                     key={i}
                                     onClick={() => setRating(i)}
-                                    className={`text-[26px] ${i <= rating ? "text-[#000]" : "text-[#333]"}`}
+                                    className={`text-[26px] ${i <= rating ? "text-[#000]" : "text-[#000]"}`}
                                 >
-                                    ★
+                                    <FaStar />
                                 </button>
                             ))}
                             <span className="text-[16px] text-[#888] ml-3">Your rating here</span>
@@ -210,9 +211,9 @@ export default function ProductPage() {
 
                         </div>
 
-                
+
                         <button className={`w-full bg-[#D3B86A] text-black py-[16px] mt-[30px] text-[18px] font-bold rounded-[8px] flex items-center justify-center gap-2 ${workSans.className}`}>
-                            ★ Leave Review
+                            <span><FaStar /></span> Leave Review
                         </button>
 
                     </div>
@@ -220,62 +221,65 @@ export default function ProductPage() {
 
                     {/* REVIEW LIST */}
                     <div className="mt-[40px] space-y-[22px]">
-
                         {[1, 2, 3, 4].map((i) => (
                             <div
                                 key={i}
                                 className="bg-gradient-to-r from-[#1a1a1a] to-[#0d0d0d] rounded-[12px] px-[26px] py-[22px]"
                             >
+                                {/* Top Section */}
+                                <div className="flex items-center gap-[16px]">
 
-                                <div className="flex items-start gap-[16px]">
-
-             
-                                    <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
+                                    {/* Image */}
+                                    <div className="w-[50px] h-[50px] rounded-full overflow-hidden flex-shrink-0">
                                         <Image
                                             src="/product/reviewman.png"
                                             alt="user"
                                             width={50}
                                             height={50}
-                                            className="object-cover"
+                                            className="object-cover w-full h-full"
                                         />
                                     </div>
 
-                                    <div className="flex-1">
+                                    {/* Name + Rating */}
+                                    <div className="flex flex-col">
+                                        <div className="flex items-center gap-[10px] flex-wrap">
 
-                                        <div className="flex items-center gap-[12px] flex-wrap">
-
+                                            {/* Name */}
                                             <p className={`text-[18px] font-semibold ${workSans.className}`}>
                                                 John Doe
                                             </p>
 
-                                      
-                                            <div className="flex items-center gap-[4px] text-[18px] text-[#D3B86A]">
-                                                ★★★★☆
+                                            {/* Stars */}
+                                            <div className="flex items-center gap-[3px] text-[#D3B86A] text-[16px]">
+                                                <FaStar />
+                                                <FaStar />
+                                                <FaStar />
+                                                <FaStar />
+                                                <FaStarHalfAlt />
                                             </div>
 
-                                            <span className="text-[14px] text-[#888]">4.1/5</span>
-
+                                            {/* Rating */}
+                                            <span className={`text-[14px] text-[#888] ${PublicSans.className}`}>
+                                                4.1/5
+                                            </span>
                                         </div>
 
-                           
-                                        <p className={`text-[14px] text-[#777] mt-[4px] ${PublicSans.className}`}>
+                                        {/* Location */}
+                                        <p className={`text-[14px] text-[#777] ${PublicSans.className}`}>
                                             Seattle, Washington
                                         </p>
-
-                                  
-                                        <div className="w-full h-[1px] bg-[#969696] my-[14px]" />
-
-                               
-                                        <p className={`text-[16px] text-[#B5B5B5] leading-[1.8] ${PublicSans.className}`}>
-                                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-                                        </p>
-
                                     </div>
                                 </div>
 
+                                {/* Divider */}
+                                <div className="w-full h-[1px] bg-[#969696] my-[14px]" />
+
+                                {/* Review Text */}
+                                <p className={`text-[16px] text-[#B5B5B5] leading-[1.8] ${PublicSans.className}`}>
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                                </p>
                             </div>
                         ))}
-
                     </div>
 
                 </div>

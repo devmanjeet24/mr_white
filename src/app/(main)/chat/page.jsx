@@ -16,6 +16,7 @@ import { BiLike, BiDislike } from "react-icons/bi";
 import { IoRefreshOutline } from "react-icons/io5";
 import { FiCopy } from "react-icons/fi";
 import { FaVolumeHigh } from "react-icons/fa6";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 
 export default function ChatPage() {
@@ -44,31 +45,31 @@ export default function ChatPage() {
                 {/* Top Bar */}
                 <div className={`${PublicSans.className} flex justify-between items-center mb-6`}>
 
-  <button className={`${PublicSans.className} bg-[#111] px-4 py-2 rounded-md text-[13px] flex items-center gap-2 text-[#cfcfcf] hover:bg-[#1a1a1a]`}>
-    <CiCircleInfo size={18} />
-    How does it work?
-  </button>
+                    <button className={`${PublicSans.className} bg-[#111] px-4 py-2 rounded-md text-[13px] flex items-center gap-2 text-[#cfcfcf] hover:bg-[#1a1a1a]`}>
+                        <CiCircleInfo size={18} />
+                        How does it work?
+                    </button>
 
-  <div className={`${PublicSans.className} flex gap-6 text-[13px] text-[#9CA3AF]`}>
+                    <div className={`${PublicSans.className} flex gap-6 text-[13px] text-[#9CA3AF]`}>
 
-    <button
-      onClick={() => togglePanel("bookmark")}
-      className={`${PublicSans.className} flex items-center gap-1 hover:text-[#D3B86A]`}
-    >
-      <CiBookmark size={18} />
-      Bookmarks
-    </button>
+                        <button
+                            onClick={() => togglePanel("bookmark")}
+                            className={`${PublicSans.className} flex items-center gap-1 hover:text-[#D3B86A]`}
+                        >
+                            <CiBookmark size={18} />
+                            Bookmarks
+                        </button>
 
-    <button
-      onClick={() => togglePanel("history")}
-      className={`${PublicSans.className} flex items-center gap-1 hover:text-[#D3B86A]`}
-    >
-      <FaRegClock size={16} />
-      History
-    </button>
+                        <button
+                            onClick={() => togglePanel("history")}
+                            className={`${PublicSans.className} flex items-center gap-1 hover:text-[#D3B86A]`}
+                        >
+                            <FaRegClock size={16} />
+                            History
+                        </button>
 
-  </div>
-</div>
+                    </div>
+                </div>
 
                 {/* Chat Container */}
                 <div className={`${PublicSans.className} bg-gradient-to-br from-[#0f0f0f] to-[#0a0a0a] rounded-xl p-6 min-h-[500px] flex flex-col justify-between`}>
@@ -106,7 +107,7 @@ export default function ChatPage() {
                         <div className={`${PublicSans.className} bg-gradient-to-br from-[#1a1a1a] to-[#111] rounded-xl px-5 py-4`}>
 
                             {/* Top */}
-                            <div className={`${PublicSans.className} flex items-center justify-between`}>
+                            <div className={`${PublicSans.className} flex justify-between items-center`}>
 
                                 <span className={`${PublicSans.className} text-[#9CA3AF] text-[20px]`}>
                                     Write your message here.
@@ -187,7 +188,7 @@ export default function ChatPage() {
 
                 <div className="p-6 h-full flex flex-col">
 
-                    <div className="flex items-center justify-between mb-5">
+                    <div className="flex justify-between items-center mb-5">
 
                         <div className="flex items-center gap-3">
                             <button onClick={() => setActivePanel(null)}>✕</button>
@@ -197,8 +198,9 @@ export default function ChatPage() {
                         </div>
 
                         {activePanel === "history" && (
-                            <button className={`text-[12px] text-[#9CA3AF] ${PublicSans.className}`}>
-                                Clear History
+                            <button className={`text-[12px] text-[#9CA3AF] ${PublicSans.className} flex justify-start items-center gap-2    `}>
+                              <span>
+                                <FaRegTrashAlt /></span>  Clear Historyy
                             </button>
                         )}
                     </div>
@@ -234,3 +236,5 @@ export default function ChatPage() {
         </div>
     );
 }
+
+
